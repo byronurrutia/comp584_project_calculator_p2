@@ -84,7 +84,9 @@ function calculate() {
 }
 
 function updateDisplay(n) {
-  text.textContent = n;
+  if (n % 1 != 0) {
+    text.textContent = n.toFixed(8);
+  } else text.textContent = n;
 }
 
 // number buttons
