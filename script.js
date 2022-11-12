@@ -40,6 +40,9 @@ function backspace() {
   if (number !== "") {
     number = number.slice(0, -1);
     updateDisplay(number);
+    if (number === "") {
+      updateDisplay(0);
+    }
   }
 }
 
